@@ -1,15 +1,57 @@
-<div class="p-fluid p-formgrid p-grid">
-  <div class="p-field p-col">
-    <label for="firstname1">Firstname</label>
-    <input id="firstname1" type="text" pInputText>
+<p-card header="Submit form to check survival">
+
+  <div class="p-fluid p-formgrid p-grid">
+    <div class="p-field p-col">
+      <div style="padding: 0.6em">
+       Sex
+      </div>
+      <p-dropdown [options]="sexes" [(ngModel)]="sex"></p-dropdown>
+    </div>
+    <div class="p-field p-col">
+      <div style="padding: 0.6em">
+        Age
+      </div>
+      <p-inputNumber [(ngModel)]="age" mode="decimal"></p-inputNumber>
+    </div>
+    <div class="p-field p-col">
+      <div style="padding: 0.6em">
+        Socio economic status
+      </div>
+      <p-dropdown [options]="pclasses" [(ngModel)]="pclass"></p-dropdown>
+    </div>
   </div>
-  <div class="p-field p-col">
-    <label for="lastname1">Lastname</label>
-    <input id="lastname1" type="text" pInputText>
+
+  <h3>Who (and how many) would you most likely take on a ship trip?</h3>
+  <div class="p-fluid p-formgrid p-grid">
+    <div class="p-field p-col">
+      <div style="padding: 0.6em">
+        Siblings
+      </div>
+      <p-dropdown [options]="siblings" [(ngModel)]="selectedSiblings"></p-dropdown>
+    </div>
+    <div class="p-field">
+      <div style="padding: 0.6em">
+        Spouse
+      </div>
+      <p-inputSwitch [(ngModel)]="checked"></p-inputSwitch>
+    </div>
+    <div class="p-field p-col">
+      <div style="padding: 0.6em">
+        Parents
+      </div>
+      <p-dropdown [options]="parents" [(ngModel)]="selectedParents"></p-dropdown>
+    </div>
+    <div class="p-field p-col">
+      <div style="padding: 0.6em">
+        Children
+      </div>
+      <p-dropdown [options]="children" [(ngModel)]="selectedChildren"></p-dropdown>
+    </div>
   </div>
-</div>
+
+  <div class="p-text-right">
+    <p-button label="Check survival" class="p-button-success" (onClick)="getSurvival()"></p-button>
+  </div>
+</p-card>
 
 
-
-<h5> In a relationship</h5>
-<p-inputSwitch [(ngModel)]="checked"></p-inputSwitch>
