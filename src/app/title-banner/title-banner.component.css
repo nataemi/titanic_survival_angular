@@ -1,5 +1,5 @@
 .image{
-  height:20em; background-size:cover; width:auto;
+  height:50em; background-size:cover; width:auto;
   background-image:url('http://pngimg.com/uploads/titanic/titanic_PNG14.png');
   background-position:50% 50%;
 }
@@ -7,4 +7,5 @@
 h1{
   font-size: 80px;
   font-family: Garamond, serif;
+  color: white;
 }

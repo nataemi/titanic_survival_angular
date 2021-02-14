@@ -1,0 +1,5 @@
+<p-card header="Check who wanted to know if they survived">
+  <button type="button" label = "Refresh data" pButton (click)="update($event)"></button>
+  <p-chart type="doughnut" [width]="400" [height]="400" [data]="sexData"></p-chart>
+  <p-chart type="pie"  [width]="400" [height]="400" [data]="classData"></p-chart>
+</p-card>

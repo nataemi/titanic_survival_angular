@@ -17,13 +17,18 @@ import {InputNumberModule} from 'primeng/inputnumber';
 import { HttpClientModule } from '@angular/common/http';
 import { SurvivedComponent } from './survived/survived.component';
 import { AppRoutingModule } from './app-routing.module';
+import { DrownedComponent } from './drowned/drowned.component';
+import { StatsComponent } from './stats/stats.component';
+import {ChartModule} from 'primeng/chart';
 
 @NgModule({
   declarations: [
     AppComponent,
     TitleBannerComponent,
     UserInputComponent,
-    SurvivedComponent
+    SurvivedComponent,
+    DrownedComponent,
+    StatsComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +42,8 @@ import { AppRoutingModule } from './app-routing.module';
     CardModule,
     DropdownModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

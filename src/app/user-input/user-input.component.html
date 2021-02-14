@@ -5,7 +5,7 @@
       <div style="padding: 0.6em">
        Sex
       </div>
-      <p-dropdown [options]="sexes" [(ngModel)]="sex"></p-dropdown>
+      <p-dropdown [options]="sexes" [(ngModel)]="sex" optionLabel="label"></p-dropdown>
     </div>
     <div class="p-field p-col">
       <div style="padding: 0.6em">
@@ -17,7 +17,7 @@
       <div style="padding: 0.6em">
         Socio economic status
       </div>
-      <p-dropdown [options]="pclasses" [(ngModel)]="pclass"></p-dropdown>
+      <p-dropdown [options]="pclasses" [(ngModel)]="pclass" optionLabel="label"></p-dropdown>
     </div>
   </div>
 
@@ -27,7 +27,7 @@
       <div style="padding: 0.6em">
         Siblings
       </div>
-      <p-dropdown [options]="siblings" [(ngModel)]="selectedSiblings"></p-dropdown>
+      <p-dropdown [options]="numbers" [(ngModel)]="selectedSiblings" optionLabel="label"></p-dropdown>
     </div>
     <div class="p-field">
       <div style="padding: 0.6em">
@@ -39,13 +39,13 @@
       <div style="padding: 0.6em">
         Parents
       </div>
-      <p-dropdown [options]="parents" [(ngModel)]="selectedParents"></p-dropdown>
+      <p-dropdown [options]="numbers" [(ngModel)]="selectedParents" optionLabel="label"></p-dropdown>
     </div>
     <div class="p-field p-col">
       <div style="padding: 0.6em">
         Children
       </div>
-      <p-dropdown [options]="children" [(ngModel)]="selectedChildren"></p-dropdown>
+      <p-dropdown [options]="numbers" [(ngModel)]="selectedChildren" optionLabel="label"></p-dropdown>
     </div>
   </div>
 
